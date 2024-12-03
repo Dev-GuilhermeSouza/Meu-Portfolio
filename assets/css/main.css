@@ -197,12 +197,16 @@ button:disabled{
 
 .preten article{
   align-items: center;
-  margin-top: 90px;
+  margin-top: 170px;
   display: flex;
   margin-right: 50px;
   border-radius: 20px;
-  height: 400px;
+  height: 300px;
+  justify-content: center;
+  width: 300px;
   background-color: #022544;
+  transition: .5s;
+
 }
 
 .container__article-preten img{
@@ -213,3 +217,15 @@ button:disabled{
   color: white;
 }
 
+.container__article-preten i {
+  font-size: 90px;
+  color: white;
+}
+
+.container__preten article:hover{
+  padding: 50px;
+  transition: .5s;
+  background: linear-gradient(0deg,  #1a3499 ,#0f5bb5, #515bd4);
+  border-radius: 50%;
+  border: 5px solid black;
+}
