@@ -223,13 +223,6 @@ button:disabled{
 
 }
 
-selector, .container__article-preten{
-  transition: 0.5s;
-}
-
-selector:hover .container__article-preten{
-  filter: blur(10px);
-}
 
 
 
