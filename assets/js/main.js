@@ -14,7 +14,7 @@ function showCard(index) {
   const cards = document.querySelectorAll('.container__article');
   if (index >= 0 && index < cards.length) {
     currentCardIndex = index;
-    const offset = -index * 100; // 100% width for each card
+    const offset = -index * 15; // 100% width for each card
     cards.forEach(card => {
       card.style.transform = `translateX(${offset}%)`;
     });
@@ -45,3 +45,10 @@ function updateButtons() {
 document.addEventListener('DOMContentLoaded', () => {
   showCard(currentCardIndex);
 });
+
+function toggleMenu(){
+  const menu = document.querySelector('.menu-hamburguer');
+  menu.classList.toggle('show');
+}
+
+
